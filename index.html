@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKV Hiringmate Pvt Ltd - Your Trusted Staffing Partner</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #0369a1 0%, #0c4a6e 100%);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="gradient-bg text-white">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold">SKV Hiringmate</div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#home" class="hover:text-sky-200">Home</a>
+                    <a href="#services" class="hover:text-sky-200">Services</a>
+                    <a href="#about" class="hover:text-sky-200">About</a>
+                    <a href="#contact" class="hover:text-sky-200">Contact</a>
+                </div>
+                <button class="md:hidden" onclick="toggleMenu()">
+                    <i class="bi bi-list text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden px-4 py-2">
+            <a href="#home" class="block py-2">Home</a>
+            <a href="#services" class="block py-2">Services</a>
+            <a href="#about" class="block py-2">About</a>
+            <a href="#contact" class="block py-2">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="gradient-bg text-white py-20">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6">Your Trusted Partner in Staffing Solutions</h1>
+                    <p class="text-lg mb-8">We connect exceptional talent with outstanding opportunities.</p>
+                    <button class="bg-white text-sky-900 px-8 py-3 rounded-full font-semibold hover:bg-sky-100 transition">Get Started</button>
+                </div>
+                <div class="hidden md:block">
+                    <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3" alt="Staffing" class="rounded-lg shadow-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Our Services</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-6 bg-gray-50 rounded-lg hover:shadow-lg transition">
+                    <i class="bi bi-people-fill text-4xl text-sky-700 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3">Permanent Staffing</h3>
+                    <p class="text-gray-600">Find the perfect permanent employees for your organization.</p>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-lg hover:shadow-lg transition">
+                    <i class="bi bi-clock-history text-4xl text-sky-700 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3">Contract Staffing</h3>
+                    <p class="text-gray-600">Flexible staffing solutions for your temporary requirements.</p>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-lg hover:shadow-lg transition">
+                    <i class="bi bi-gear-fill text-4xl text-sky-700 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3">Executive Search</h3>
+                    <p class="text-gray-600">Specialized recruitment for senior leadership positions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">About SKV Hiringmate</h2>
+                    <p class="text-gray-600 mb-4">With years of experience in the staffing industry, we understand the challenges businesses face in finding the right talent. Our dedicated team works tirelessly to bridge the gap between employers and job seekers.</p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center"><i class="bi bi-check-circle-fill text-sky-700 mr-2"></i> Industry expertise</li>
+                        <li class="flex items-center"><i class="bi bi-check-circle-fill text-sky-700 mr-2"></i> Proven track record</li>
+                        <li class="flex items-center"><i class="bi bi-check-circle-fill text-sky-700 mr-2"></i> Customized solutions</li>
+                    </ul>
+                </div>
+                <div class="order-first md:order-last">
+                    <img src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?ixlib=rb-4.0.3" alt="About Us" class="rounded-lg shadow-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Contact Us</h2>
+            <div class="max-w-2xl mx-auto">
+                <form class="space-y-6">
+                    <div>
+                        <label class="block text-gray-700 mb-2">Name</label>
+                        <input type="text" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-sky-700">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 mb-2">Email</label>
+                        <input type="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-sky-700">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 mb-2">Message</label>
+                        <textarea class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-sky-700" rows="4"></textarea>
+                    </div>
+                    <button class="w-full bg-sky-700 text-white py-3 rounded-lg hover:bg-sky-800 transition">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="gradient-bg text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">SKV Hiringmate</h3>
+                    <p class="text-sm">Your trusted partner in staffing solutions.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#home" class="hover:text-sky-200">Home</a></li>
+                        <li><a href="#services" class="hover:text-sky-200">Services</a></li>
+                        <li><a href="#about" class="hover:text-sky-200">About</a></li>
+                        <li><a href="#contact" class="hover:text-sky-200">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Contact Info</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><i class="bi bi-geo-alt mr-2"></i>123 Business Street, City</li>
+                        <li><i class="bi bi-telephone mr-2"></i>+1 234 567 890</li>
+                        <li><i class="bi bi-envelope mr-2"></i>info@skvhiringmate.com</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-sky-200"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="hover:text-sky-200"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="hover:text-sky-200"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="hover:text-sky-200"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-sky-600 mt-8 pt-8 text-center text-sm">
+                <p>&copy; 2023 SKV Hiringmate Pvt Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Smooth scroll for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+<script>document.body.addEventListener('wheel', e => { if (!e.ctrlKey) return; e.preventDefault(); return }, { passive: false })</script>
+	</body>
+</html>
